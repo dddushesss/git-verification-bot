@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class VerifierExecuter {
 
 
-    @Scheduled(cron = "*/5 * * * * *")
+    //@Scheduled(cron = "*/5 * * * * *")
     public void verify() {
         System.out.printf("Влад Котов, где ТЗ? Ты же обещал\n");
     }
