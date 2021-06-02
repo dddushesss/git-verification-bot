@@ -1,4 +1,4 @@
-package com.example.gitverificationbot.Services;
+package com.example.gitverificationbot;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,6 +22,7 @@ public class PingTask {
         URL url = new URL(getUrl());
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.connect();
+        System.out.print("Connected - ok");
     }
 
 }
