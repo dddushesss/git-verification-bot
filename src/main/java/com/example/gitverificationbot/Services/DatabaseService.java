@@ -30,4 +30,9 @@ public class DatabaseService {
         String sql = "insert into Student (First_Name, Last_Name, GitLogin, Repository) values ('" + data + "')";
         jdbcTemplate.update(sql);
     }
+
+    public Student getStudentById(int id) {
+        String sql = "SELECT * FROM Student where id = " + id;
+        return jdbcTemplate.queryForObject(sql, studentMapper);
+    }
 }
