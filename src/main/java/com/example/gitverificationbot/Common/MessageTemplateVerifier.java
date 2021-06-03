@@ -1,4 +1,4 @@
-package com.example.gitverificationbot;
+package com.example.gitverificationbot.Common;
 
 import java.util.regex.Pattern;
 

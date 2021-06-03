@@ -1,4 +1,4 @@
-package com.example.gitverificationbot;
+package com.example.gitverificationbot.Common;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,7 +1,7 @@
 package com.example.gitverificationbot.Services;
 
 
-import com.example.gitverificationbot.GithubApiInterface;
+import com.example.gitverificationbot.Common.GithubApiInterface;
 import com.example.gitverificationbot.Model.*;
 import org.springframework.stereotype.Service;
 import retrofit2.Call;

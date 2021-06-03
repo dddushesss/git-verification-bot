@@ -11,11 +11,13 @@ import java.util.List;
 
 @Repository
 public class DatabaseService {
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
-    @Autowired
-    private StudentMapper studentMapper;
+    private final JdbcTemplate jdbcTemplate;
+    private final StudentMapper studentMapper;
 
+    public DatabaseService(JdbcTemplate jdbcTemplate, StudentMapper studentMapper) {
+        this.jdbcTemplate = jdbcTemplate;
+        this.studentMapper = studentMapper;
+    }
 
     public List<Student> getStudents() {
         return jdbcTemplate.query("select * from Student", studentMapper);
