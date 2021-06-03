@@ -12,10 +12,13 @@ import java.util.List;
 
 @RestController
 public class GitHubClientController {
-    @Autowired
-    private GithubClient githubService;
-    @Autowired
-    private DatabaseService databaseService;
+    private final GithubClient githubService;
+    private final DatabaseService databaseService;
+
+    public GitHubClientController(GithubClient githubService, DatabaseService databaseService) {
+        this.githubService = githubService;
+        this.databaseService = databaseService;
+    }
 
     @GetMapping("/repos")
     public List<Repository> getRepos() throws IOException {

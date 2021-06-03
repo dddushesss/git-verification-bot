@@ -3,7 +3,6 @@ package com.example.gitverificationbot.Services;
 
 import com.example.gitverificationbot.Model.Student;
 import com.example.gitverificationbot.Model.StudentMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
