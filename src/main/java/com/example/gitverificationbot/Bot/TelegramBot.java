@@ -31,7 +31,6 @@ public class TelegramBot extends TelegramLongPollingBot {
         return BotConfig.getInstance().getTOKEN();
     }
 
-
     @SneakyThrows
     @Override
     public void onUpdateReceived(Update update) {
